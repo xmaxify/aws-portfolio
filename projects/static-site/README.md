@@ -11,4 +11,9 @@
 
 ## Deployment
 
+<<<<<<< HEAD
 ## Screenshots
+=======
+## Screenshots
+
+>>>>>>> 4ade5ef (init: initial structure)
