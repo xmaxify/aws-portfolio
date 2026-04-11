@@ -10,5 +10,3 @@
 - **ACM** — SSL
 
 ## Deployment
-
-## Screenshots
