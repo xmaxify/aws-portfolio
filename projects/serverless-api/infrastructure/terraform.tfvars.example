@@ -1,0 +1,6 @@
+aws_region     = "eu-west-1"
+environment    = "production"
+allowed_origin = "https://example.com"
+
+cloudflare_zone_id   = "your-zone-id"
+cloudflare_api_token = "your-api-token"
