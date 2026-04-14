@@ -4,28 +4,28 @@ Provisions the Terraform remote backend used by all projects in this repository.
 
 ## Services Used
 
-| Service | Role |
-|---------|------|
-| **S3** | Stores Terraform state files - versioning enabled, AES256 encryption, public access blocked |
-| **DynamoDB** | State locking - prevents concurrent `terraform apply` runs |
+| Service      | Role                                                                                        |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| **S3**       | Stores Terraform state files - versioning enabled, AES256 encryption, public access blocked |
+| **DynamoDB** | State locking - prevents concurrent `terraform apply` runs                                  |
 
 ## Infrastructure
 
-| File | Description |
-|------|-------------|
-| `main.tf` | S3 state bucket and DynamoDB lock table |
-| `outputs.tf` | Bucket name and table name |
-| `providers.tf` | AWS provider config |
-| `versions.tf` | Provider version constraints |
+| File           | Description                             |
+| -------------- | --------------------------------------- |
+| `main.tf`      | S3 state bucket and DynamoDB lock table |
+| `outputs.tf`   | Bucket name and table name              |
+| `providers.tf` | AWS provider config                     |
+| `versions.tf`  | Provider version constraints            |
 
 ## Key Configuration
 
-| Setting | Value |
-|---------|-------|
-| S3 Bucket | `maxify-sh-tfstate` |
-| DynamoDB Table | `maxify-sh-tflock` |
-| DynamoDB Hash Key | `LockID` |
-| AWS Region | `eu-west-1` |
+| Setting           | Value               |
+| ----------------- | ------------------- |
+| S3 Bucket         | `maxify-sh-tfstate` |
+| DynamoDB Table    | `maxify-sh-tflock`  |
+| DynamoDB Hash Key | `LockID`            |
+| AWS Region        | `eu-west-1`         |
 
 ## Deployment
 
@@ -41,3 +41,4 @@ terraform apply
 ```
 
 The state for bootstrap itself is stored locally (`terraform.tfstate`) - this is intentional, as there is no remote backend yet at this point.
+

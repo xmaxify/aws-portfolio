@@ -6,3 +6,4 @@ resource "cloudflare_dns_record" "api" {
   proxied = false
   ttl     = 1
 }
+

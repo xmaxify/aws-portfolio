@@ -28,3 +28,4 @@ resource "aws_acm_certificate_validation" "api" {
   certificate_arn         = aws_acm_certificate.api.arn
   validation_record_fqdns = [for dvo in aws_acm_certificate.api.domain_validation_options : dvo.resource_record_name]
 }
+

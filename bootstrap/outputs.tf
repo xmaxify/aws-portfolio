@@ -7,3 +7,4 @@ output "tflock_table_name" {
   description = "Name of the DynamoDB table used for Terraform state locking"
   value       = aws_dynamodb_table.tflock.name
 }
+

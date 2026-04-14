@@ -38,3 +38,4 @@ resource "aws_dynamodb_table" "tflock" {
     type = "S"
   }
 }
+

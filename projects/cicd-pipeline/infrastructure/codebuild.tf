@@ -37,3 +37,4 @@ resource "aws_codebuild_project" "deploy" {
     }
   }
 }
+

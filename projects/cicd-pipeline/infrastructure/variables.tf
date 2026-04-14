@@ -35,3 +35,4 @@ variable "cloudfront_distribution_id" {
   description = "CloudFront distribution ID for cache invalidation after deploy"
   type        = string
 }
+
