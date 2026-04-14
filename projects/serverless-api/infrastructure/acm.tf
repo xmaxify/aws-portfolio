@@ -1,5 +1,5 @@
 resource "aws_acm_certificate" "api" {
-  domain_name       = "api.maxify.sh"
+  domain_name       = var.api_domain_name
   validation_method = "DNS"
 
   lifecycle {

@@ -35,7 +35,7 @@ resource "aws_apigatewayv2_route" "visit" {
 }
 
 resource "aws_apigatewayv2_domain_name" "api" {
-  domain_name = "api.maxify.sh"
+  domain_name = var.api_domain_name
 
   domain_name_configuration {
     certificate_arn = aws_acm_certificate_validation.api.certificate_arn

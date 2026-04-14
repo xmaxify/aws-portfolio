@@ -15,6 +15,12 @@ variable "allowed_origin" {
   type        = string
 }
 
+variable "api_domain_name" {
+  description = "Custom domain name for the API"
+  type        = string
+  default     = "api.maxify.sh"
+}
+
 variable "cloudflare_zone_id" {
   description = "Cloudflare zone ID for maxify.sh"
   type        = string
