@@ -1,0 +1,11 @@
+domain_name  = "maxify.sh"
+environment  = "production"
+aws_region   = "eu-west-1"
+www_redirect = true
+
+# Cloudflare dashboard → select domain → Overview → right sidebar
+cloudflare_zone_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Cloudflare → My Profile → API Tokens → Create Token
+# Use template "Edit zone DNS" and scope to example.con zone only
+cloudflare_api_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"

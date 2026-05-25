@@ -4,11 +4,11 @@ A collection of AWS projects showcasing cloud architecture and infrastructure-as
 
 ## Projects
 
-| Project | Description | Services |
-|---------|-------------|----------|
-| [static-site](./projects/static-site/) | Static website hosted on S3, distributed via CloudFront | S3, CloudFront, ACM, Route53 (Cloudflare DNS) |
-| [serverless-api](./projects/serverless-api/) | Serverless visitor counter REST API | Lambda, API Gateway, DynamoDB, IAM |
-| [cicd-pipeline](./projects/cicd-pipeline/) | Automated deployment pipeline triggered by GitHub pushes | CodePipeline, CodeBuild, IAM |
+| Project                                      | Description                                              | Services                                      |
+| -------------------------------------------- | -------------------------------------------------------- | --------------------------------------------- |
+| [static-site](./projects/static-site/)       | Static website hosted on S3, distributed via CloudFront  | S3, CloudFront, ACM, Route53 (Cloudflare DNS) |
+| [serverless-api](./projects/serverless-api/) | Serverless visitor counter REST API                      | Lambda, API Gateway, DynamoDB, IAM            |
+| [cicd-pipeline](./projects/cicd-pipeline/)   | Automated deployment pipeline triggered by GitHub pushes | CodePipeline, CodeBuild, IAM                  |
 
 ## Architecture
 
